@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="📊 Emotion Summary"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Overall Statistics -->
+        <TextView
+            android:id="@+id/overallStatsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/summary_background"
+            android:padding="16dp"
+            android:text="Loading overall statistics..."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Daily Statistics -->
+        <TextView
+            android:id="@+id/dailyStatsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/summary_background"
+            android:padding="16dp"
+            android:text="Loading daily statistics..."
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Frequency List Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="📈 Emotion Frequency"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Frequency List -->
+        <ListView
+            android:id="@+id/frequencyListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/summary_background"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Back to Main"
+            android:textColor="@android:color/white" />
+
+
+</LinearLayout>
+
+
+</ScrollView>

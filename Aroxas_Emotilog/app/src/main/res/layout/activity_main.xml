@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EmotiLog"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling today?"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Emoticon Buttons Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnHappy"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😊\nHappy"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnSad"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😢\nSad"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnAngry"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😠\nAngry"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Second Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnExcited"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="🤩\nExcited"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnCrying"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😭\nCrying"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnDead"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="💀\nDead"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Third Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <Button
+                    android:id="@+id/btnLoved"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😍\nLoved"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnTired"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="😴\nTired"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnSick"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="🤢\nSick"
+                    android:textSize="16sp"
+                    android:background="@drawable/emoticon_button_background"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnViewLogs"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="📋 View Logs"
+                android:textSize="16sp"
+                android:background="@drawable/action_button_background"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnSummary"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="📊 Summary"
+                android:textSize="16sp"
+                android:background="@drawable/action_button_background"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
